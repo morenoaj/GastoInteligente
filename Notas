@@ -1,0 +1,59 @@
+proyecto/
+│
+├── css/
+│   ├── bootstrap.css
+│   ├── styles.css
+│
+├── js/
+│   ├── bootstrap.bundle.js
+│   ├── main.js
+│
+├── images/
+│   ├── logo.png
+│   ├── background.jpg
+│
+├── includes/
+│   ├── header.php
+│   ├── footer.php
+│   ├── navbar.php
+│   ├── config.php
+│
+├── pages/
+│   ├── login.php
+│   ├── register.php
+│   ├── dashboard.php
+│   ├── create_account.php
+│   ├── create_category.php
+│   ├── create_transaction.php
+│
+├── api/
+│   ├── auth.php
+│   ├── accounts.php
+│   ├── categories.php
+│   ├── transactions.php
+│
+├── lib/
+│   ├── db.php
+│   ├── authentication.php
+│
+├── index.php
+├── dashboard.php
+├── login.php
+├── register.php
+└── .htaccess
+
+Explicación:
+
+css/, js/, images/: Contienen los archivos de estilo, scripts y recursos gráficos respectivamente.
+
+includes/: Contiene archivos que se incluirán en varias páginas, como encabezados, pies de página y barras de navegación.
+
+pages/: Contiene las páginas individuales de la aplicación.
+
+api/: Almacena los archivos que gestionan la API para interactuar con la base de datos.
+
+lib/: Contiene bibliotecas y archivos de utilidad, como la conexión a la base de datos y funciones de autenticación.
+
+.htaccess: Archivo de configuración del servidor web (puede variar según tu servidor) para manejar las rutas amigables (si las necesitas) y otras configuraciones.
+
+index.php, dashboard.php, login.php, register.php: Páginas principales de la aplicación.
