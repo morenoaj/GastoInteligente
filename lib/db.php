@@ -1,11 +1,22 @@
 <?php
-$db_host = "localhost";
-$db_usuario = "root";
-$db_password = "";
-$db_nombre = "monedero_inteligente";
+class Conexion{
+    // Especificar las credenciales de la base de datos
+    private $host = "localhost";
+    private $db_name = "monedero_inteligente";
+    private $username = "root";
+    private $password = "";
+    public $conn;
 
-$conexion = mysqli_connect($db_host, $db_usuario, $db_password, $db_nombre);
-
-if (!$conexion) {
-    die("Error de conexión: " . mysqli_connect_error());
+    // Obtener la conexión a la base de datos
+    public function obtenerConexion(){
+        $this->conn = null;
+        try{
+            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+            $this->conn->exec("set names utf8");
+        } catch(PDOException $exception){
+            echo "Error de conexión a la base de datos: " . $exception->getMessage();
+        }
+        return $this->conn;
+    }
 }
+?>
