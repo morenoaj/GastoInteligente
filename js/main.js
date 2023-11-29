@@ -24,3 +24,27 @@
 	});
 
 })(jQuery);
+
+
+// Supongamos que estás utilizando jQuery para hacer la solicitud AJAX
+$(".signup-form").submit(function(e) {
+    e.preventDefault();
+
+    $.ajax({
+        url: "../api/register_user.php",
+        method: "POST",
+        data: $(this).serialize(),
+        dataType: "json",
+        success: function(response) {
+            if (response.success) {
+                alert("Usuario registrado con éxito");
+                // Redirige a otra página o realiza otras acciones según tu flujo de la aplicación
+            } else {
+                alert("Error al registrar el usuario: " + response.message);
+            }
+        },
+        error: function(xhr, status, error) {
+            alert("Error de conexión: " + error);
+        }
+    });
+});
