@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
 
   </head>
-  <body class="img js-fullheight" style="background-image: url(./images/frankfurt-4945405.jpg);">
+  <body class="img js-fullheight" style="background-image: url(./images/finance6.jpg);">
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center">
@@ -23,39 +23,43 @@
         <div class="row justify-content-center">
           <div class="col-md-6 col-lg-4">
             <div class="login-wrap p-0">
-              <h3 class="mb-4 text-center">Create an account</h3>
-              <form action="#" class="signup-form">
+              <h3 class="mb-4 text-center">Crear cuenta</h3>
+              <!-- Modificar la acción del formulario para apuntar al nuevo endpoint de la API -->
+              <form action="./api/register_user.php" method="post" class="signup-form">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Full Name" required>
+                  <input type="text" class="form-control" placeholder="Nombre completo" name="nombre" required>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Email" required>
+                  <input type="email" class="form-control" placeholder="Correo" name="email" required>
                 </div>
                 <div class="form-group">
-                  <input id="password-field" type="password" class="form-control" placeholder="Password" required>
+                  <input id="password-field" type="password" class="form-control" placeholder="Contraseña" name="password" required>
                   <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                 </div>
                 <div class="form-group">
-                  <button type="submit" class="form-control btn btn-primary submit px-3">Sign Up</button>
+                  <button type="submit" class="form-control btn btn-primary submit px-3">Regístrate</button>
                 </div>
                 <div class="form-group d-md-flex">
                   <div class="w-50">
-                    <label class="checkbox-wrap checkbox-primary">Remember Me
+                    <label class="checkbox-wrap checkbox-primary">Recuérdame
                       <input type="checkbox" checked>
                       <span class="checkmark"></span>
                     </label>
                   </div>
                   <div class="w-50 text-md-right">
-                    <a href="#" style="color: #fff">Terms & Conditions</a>
+                    <a href="#" style="color: #fff">Terminos & Condiciones</a>
                   </div>
                 </div>
               </form>
-              <p class="w-100 text-center">&mdash; Or Sign Up With &mdash;</p>
+              <p class="w-100 text-center">&mdash; O inicia sesión con &mdash;</p>
               <div class="social d-flex text-center">
-                <a href="#" class="px-2 py-2 mr-2 rounded"><span class="ion-logo-facebook mr-2"></span> Correo</a>
-				<a href="#" class="px-2 py-2 mr-2 rounded"><span class="ion-logo-Correo mr-2"></span> Google</a>
-				<a href="#" class="px-2 py-2 mr-2 rounded"><span class="ion-logo-twitter mr-2"></span> Github</a>
+                <a href="#" class="px-2 py-2 mr-2 rounded"><span class="ion-logo-Correo mr-2"></span> Google</a>
+                <a href="#" class="px-2 py-2 mr-2 rounded"><span class="ion-logo-twitter mr-2"></span> Github</a>
               </div>
+
+              <!-- Línea "Ya tienes una cuenta? Iniciar sesión →" como enlace -->
+              <p class="w-100 text-center mt-3">¿Ya tienes una cuenta? <a href="./login.php" style="color: #fff;">Iniciar sesión →</a></p>
+
             </div>
           </div>
         </div>
