@@ -25,7 +25,7 @@
             <div class="login-wrap p-0">
               <h3 class="mb-4 text-center">Crear cuenta</h3>
               <!-- Modificar la acción del formulario para apuntar al nuevo endpoint de la API -->
-              <form action="./api/register_user.php" method="post" class="signup-form">
+              <form action="api/register_user.php" method="post" class="signup-form">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Nombre completo" name="nombre" required>
                 </div>
