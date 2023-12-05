@@ -26,17 +26,27 @@
                 <div class="col-md-6 col-lg-8">
                     <div class="content-wrap p-0">
                         <h3 class="mb-4 text-center">Términos y Condiciones</h3>
-                        <p>¡Bienvenido a Gasto Inteligente!</p>
-                        <p>Estos términos y condiciones describen las reglas y regulaciones para el uso del sitio web de Gasto Inteligente, ubicado en <a href="https://github.com/morenoaj/GastoInteligente" target="_blank">https://github.com/morenoaj/GastoInteligente</a>.</p>
-                        <p>Al acceder a este sitio web, asumimos que aceptas estos términos y condiciones. No continúes usando Gasto Inteligente si no estás de acuerdo con todos los términos y condiciones establecidos en esta página.</p>
 
-                        <h4>Cookies:</h4>
-                        <p>El sitio web utiliza cookies para ayudar a personalizar tu experiencia en línea. Al acceder a Gasto Inteligente, aceptaste utilizar las cookies necesarias.</p>
-                        <p>Una cookie es un archivo de texto que un servidor de páginas web coloca en tu disco duro. Las cookies no se pueden utilizar para ejecutar programas o enviar virus a tu computadora. Las cookies se te asignan de forma exclusiva y solo un servidor web en el dominio que emitió la cookie puede leerlas.</p>
-                        <p>Podemos utilizar cookies para recopilar, almacenar y rastrear información con fines estadísticos o de marketing para operar nuestro sitio web. Tienes la capacidad de aceptar o rechazar cookies opcionales...</p>
+                        <!-- Sección 1 -->
+                        <section>
+                            <p>¡Bienvenido a Gasto Inteligente!</p>
+                            <p>Estos términos y condiciones describen las reglas y regulaciones para el uso del sitio web de Gasto Inteligente, ubicado en <a href="https://github.com/morenoaj/GastoInteligente" target="_blank">https://github.com/morenoaj/GastoInteligente</a>.</p>
+                            <p>Al acceder a este sitio web, asumimos que aceptas estos términos y condiciones. No continúes usando Gasto Inteligente si no estás de acuerdo con todos los términos y condiciones establecidos en esta página.</p>
+                        </section>
 
-                        <h4>Exención de responsabilidad:</h4>
-                        <p>En la medida máxima permitida por la ley aplicable, excluimos todas las representaciones, garantías y condiciones relacionadas con nuestro sitio web y el uso de este...</p>
+                        <!-- Sección 2 -->
+                        <section>
+                            <h4>Cookies:</h4>
+                            <p>El sitio web utiliza cookies para ayudar a personalizar tu experiencia en línea...</p>
+                            <!-- Más contenido sobre cookies si es necesario -->
+                        </section>
+
+                        <!-- Sección 3 -->
+                        <section>
+                            <h4>Exención de responsabilidad:</h4>
+                            <p>En la medida máxima permitida por la ley aplicable, excluimos todas las representaciones, garantías y condiciones relacionadas con nuestro sitio web y el uso de este...</p>
+                            <!-- Más contenido sobre exención de responsabilidad si es necesario -->
+                        </section>
                     </div>
                 </div>
             </div>
