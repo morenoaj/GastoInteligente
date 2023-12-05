@@ -38,13 +38,12 @@ $(".signup-form").submit(function(e) {
       success: function(response) {
           if (response.success) {
               alert("Usuario registrado con éxito");
-              // Redirige a otra página o realiza otras acciones según tu flujo de la aplicación
           } else {
               alert("Error al registrar el usuario: " + response.message);
           }
       },
       error: function(xhr, status, error) {
-          alert("Error de conexión: " + error);
+          console.log("Error de conexión: " + error);
       }
   });
 });
